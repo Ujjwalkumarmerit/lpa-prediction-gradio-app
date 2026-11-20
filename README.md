@@ -4,6 +4,10 @@
 [![GitHub license](https://img.shields.io/github/license/Ujjwalkumarmerit/lpa-prediction-gradio-app?style=flat-square)](https://github.com/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LICENSE)
 [![Gradio App](https://img.shields.io/badge/UI-Gradio-orange?style=flat-square)](https://github.com/gradio/gradio)
 
+
+## 📱 Application Preview
+![Application Screenshot](app_screenshot.png)
+
 An elegant, interactive web application built with **Gradio** that leverages a **Custom 2-Layer Neural Network** trained from scratch using NumPy to predict student placement packages (LPA - Lakhs Per Annum) based on **CGPA** and **Profile Score**.
 
 ---
