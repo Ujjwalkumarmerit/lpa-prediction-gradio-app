@@ -8,7 +8,9 @@
 
 
 ## 📱 Application Preview
-![Application Screenshot](app_screenshot.png)
+![Application Setup](screenshot_1.png)
+
+![Application Demo](screenshot_2.png)
 
 An elegant, interactive web application built with **Gradio** that leverages a **Custom 2-Layer Neural Network** trained from scratch using NumPy to predict student placement packages (LPA - Lakhs Per Annum) based on **CGPA** and **Profile Score**.
 
