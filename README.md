@@ -1,5 +1,6 @@
 # 🎓 Student Placement LPA Predictor
 
+[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue?style=flat-square)](https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LPA_Prediction_Gradio_App.ipynb)
 [![GitHub license](https://img.shields.io/github/license/Ujjwalkumarmerit/lpa-prediction-gradio-app?style=flat-square)](https://github.com/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LICENSE)
 [![Gradio App](https://img.shields.io/badge/UI-Gradio-orange?style=flat-square)](https://github.com/gradio/gradio)
@@ -16,6 +17,8 @@ An elegant, interactive web application built with **Gradio** that leverages a *
 
 ### ⚡ Run Instantly in One Click!
 You can run this entire application directly in your browser without setting up anything on your local computer:
+
+👉 **[Click Here to Open Live App on Hugging Face](https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor) (No Setup Required!)
 
 👉 **[Click Here to Launch on Google Colab](https://colab.research.google.com/github/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LPA_Prediction_Gradio_App.ipynb)**
 
