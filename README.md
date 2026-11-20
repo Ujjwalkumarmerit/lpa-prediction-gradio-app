@@ -1,33 +1,28 @@
 # 🎓 Student Placement LPA Predictor
 
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue?style=flat-square)](https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor)
-[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue?style=flat-square)](https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LPA_Prediction_Gradio_App.ipynb)
 [![GitHub license](https://img.shields.io/github/license/Ujjwalkumarmerit/lpa-prediction-gradio-app?style=flat-square)](https://github.com/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LICENSE)
-[![Gradio App](https://img.shields.io/badge/UI-Gradio-orange?style=flat-square)](https://github.com/gradio/gradio)
 
+An elegant, interactive web application built with **Gradio** that leverages a **Custom 2-Layer Neural Network** trained from scratch using NumPy to predict student placement packages (LPA - Lakhs Per Annum) based on **CGPA** and **Profile Score**.
+
+---
 
 ## 📱 Application Preview
 ![Application Setup](screenshot_1.png)
 
 ![Application Demo](screenshot_2.png)
 
-An elegant, interactive web application built with **Gradio** that leverages a **Custom 2-Layer Neural Network** trained from scratch using NumPy to predict student placement packages (LPA - Lakhs Per Annum) based on **CGPA** and **Profile Score**.
-
 ---
 
 ## 🚀 Live Demo & Direct Execution
 
 ### ⚡ Run Instantly in One Click!
-You can run this entire application directly in your browser without setting up anything on your local computer:
+You can use the deployed web application directly in your browser with zero configuration, or explore the underlying notebook training workflow:
 
-👉 **[Click Here to Open Live App on Hugging Face](https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor) (No Setup Required!)
+👉 **[Click Here to Open Live App on Hugging Face](https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor)** (No Setup Required!)
 
-👉 **[Click Here to Open Live App on Hugging Face] (https://huggingface.co/spaces/UjjwalKumarmerit/student-placement-lpa-predictor) (No Setup Required!)
-
-👉 **[Click Here to Launch on Google Colab](https://colab.research.google.com/github/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LPA_Prediction_Gradio_App.ipynb)**
-
-Once the Colab page opens, select **Runtime > Run All** from the top menu, scroll to the bottom, and interact with the live application link!
+👉 **[Click Here to Launch Code Workspace on Google Colab](https://colab.research.google.com/github/Ujjwalkumarmerit/lpa-prediction-gradio-app/blob/main/LPA_Prediction_Gradio_App.ipynb)**
 
 ---
 
@@ -68,14 +63,14 @@ $$\mathcal{L}(y, \hat{y}) = (y - \hat{y})^2$$
 
 Parameters are updated using Gradient Descent with custom-computed analytical gradients:
 * **Weights $W^{[2]}$ & Bias $b^{[2]}$ Update (Output Layer)**:
-  $$\Delta W_i^{[2]} = lpha \cdot 2(y - \hat{y}) \cdot A_i^{[1]}$$
-  $$\Delta b^{[2]} = lpha \cdot 2(y - \hat{y})$$
+  $$\Delta W_i^{[2]} = \alpha \cdot 2(y - \hat{y}) \cdot A_i^{[1]}$$
+  $$\Delta b^{[2]} = \alpha \cdot 2(y - \hat{y})$$
 
 * **Weights $W^{[1]}$ & Bias $b^{[1]}$ Update (Hidden Layer)**:
-  $$\Delta W_{ji}^{[1]} = lpha \cdot 2(y - \hat{y}) \cdot W_i^{[2]} \cdot X_j$$
-  $$\Delta b_j^{[1]} = lpha \cdot 2(y - \hat{y}) \cdot W_j^{[2]}$$
+  $$\Delta W_{ji}^{[1]} = \alpha \cdot 2(y - \hat{y}) \cdot W_i^{[2]} \cdot X_j$$
+  $$\Delta b_j^{[1]} = \alpha \cdot 2(y - \hat{y}) \cdot W_j^{[2]}$$
 
-Where $lpha$ represents the learning rate (configured to `0.001`).
+Where $\alpha$ represents the learning rate (configured to `0.001`).
 
 ---
 
